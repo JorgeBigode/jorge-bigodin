@@ -1,0 +1,60 @@
+.meme {
+    margin-left: 16%;
+    margin-top: 3%;
+}
+
+.slider {
+    margin-top: 2%;
+}
+
+.slider img {
+    max-width: 500px;
+    max-height: 300px;
+    border: 8px solid rgb(12, 21, 158);
+}
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/anterior.png);
+    top: 38%;
+    left: 10%;
+}
+
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/proximo.png);
+    top: 38%;
+    right: 10%;
+}
+
+.slick-initialized {
+    overflow: hidden;
+
+}
+
+@media (max-width: 999px) {
+    .slider img {
+        max-width: 230px;
+        max-height: 130px;
+    }
+
+    button.slick-prev {
+        opacity: 0;
+    }
+
+    button.slick-next {
+        opacity: 0;
+    }
+}
